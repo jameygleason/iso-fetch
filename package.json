@@ -1,6 +1,6 @@
 {
   "name": "@signalchain/iso-fetch",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "author": "Todo <todo@example.com> (https://example.com/)",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -27,6 +27,7 @@
     "dev": "rollup -c -w",
     "build": "cross-env NODE_ENV=true && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "npm run build && npm version patch --force && npm publish",
     "push": "sh ./scripts/push.sh"
   },
   "devDependencies": {
