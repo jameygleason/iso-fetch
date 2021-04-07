@@ -1,11 +1,11 @@
 {
   "name": "@signalchain/iso-fetch",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Todo <todo@example.com> (https://example.com/)",
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
-  "types": "./typings/types.d.ts",
+  "types": "./typings/isoFetch.d.ts",
   "description": "",
   "keywords": [],
   "bugs": {
@@ -24,7 +24,6 @@
     "README.md"
   ],
   "scripts": {
-    "dev": "rollup -c -w",
     "build": "cross-env NODE_ENV=true && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
     "patch": "npm run build && npm version patch --force && npm publish",
